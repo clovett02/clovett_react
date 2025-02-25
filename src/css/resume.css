@@ -1,0 +1,30 @@
+.body, p, ul, li{
+    text-align: left;
+    padding-right: 220;
+}
+
+.company{
+    font-size: medium;
+}
+
+.companydescription{
+    font-size: small;
+    font-style: italic;
+}
+
+.jobtitle{
+    font-weight: bold;
+    font-size: large;
+}
+
+.dates_worked{
+font-size: small;
+}
+
+ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+li{
+    margin-top: 8px;
+}
