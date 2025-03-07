@@ -6,8 +6,11 @@ import Sidepanel from './components/Sidepanel';
 function App() {
   return (
     <div className="App">
-      <Sidepanel/>
-      <Home/>
+      <body>
+        <Sidepanel/>
+        <Home/>
+      </body>
+      
     </div>
   );
 }
