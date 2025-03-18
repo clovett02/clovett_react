@@ -3,21 +3,30 @@ import React, { Component } from "react";
 
 
 export default class Sidepanel extends Component{
-
+    constructor(props){
+        super(props)
+        this.state={
+            panelwidth: "150px"
+        }
+    }
     openNav(){
-        document.getElementById("mySidepanel").style.width = "150px";
+        this.setState({
+            panelwidth:"150px"
+    })
     }
     
     closeNav() {
-        document.getElementById("mySidepanel").style.width = "0";
+        this.setState({
+            panelwidth:"0px"
+        })
     }
 
     render(){
         return(
             <div>
-                <a class="openbtn" onclick={this.openNav()}>Open Sidebar</a>
-                <div id="mySidepanel" class="sidepanel">
-                    <button class="closebtn" onClick={handleClick}>&times;</button>
+                {/* <button> class="openbtn" onclick={this.openNav()}Open Sidebar</button> */}
+                <div id="mySidepanel" className="sidepanel" style={{width: this.state.panelwidth}}>
+                    <button class="closebtn" onClick={this.closeNav()}>&times;</button>
                     
                     <a href="/">Home</a> 
                     <a href="/resume">Resume</a>
