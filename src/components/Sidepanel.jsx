@@ -1,21 +1,30 @@
 import React, { Component } from "react";
-import '../javascript/sidepanel'
+
 
 
 export default class Sidepanel extends Component{
+
+    openNav(){
+        document.getElementById("mySidepanel").style.width = "150px";
+    }
+    
+    closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+
     render(){
         return(
             <div>
-                <a class="openbtn" onclick="openNav()">Open Sidebar</a>
+                <a class="openbtn" onclick={this.openNav()}>Open Sidebar</a>
                 <div id="mySidepanel" class="sidepanel">
-                    <button class="closebtn" onclick="closeNav()">&times;</button>
+                    <button class="closebtn" onClick={handleClick}>&times;</button>
                     
                     <a href="/">Home</a> 
                     <a href="/resume">Resume</a>
                     <a href="/projects">Projects</a>
                     <a href="https://github.com/clovett02">GitHub Profile</a>
                 </div>
-                <script src="/javascript/sidepanel.js"></script>
+                <script src="/src/javascript/sidepanel.js" type="text/javascript"/>
             </div>
         )
     }
