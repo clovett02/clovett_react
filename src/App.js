@@ -5,23 +5,23 @@ import Sidepanel from './components/Sidepanel';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <body>
-          <BrowserRouter>
-          <Sidepanel/>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='resume' element={<Resume />} />
-              <Route path='projects' element={<Projects />} />
-            </Routes>
-          </BrowserRouter>
-      </body>
-      
-    </div>
-  );
-}
-
-export default App;
+export default function App(){
+    return (
+      <div className="App">
+        <body>
+            <BrowserRouter>
+              <Routes>
+                <Route element={<Sidepanel />}>
+                  <Route path='/' element={<Home />} />
+                  <Route path='resume' element={<Resume />} />
+                  <Route path='projects' element={<Projects />} />
+                </Route>
+              </Routes>
+            </BrowserRouter>
+        </body>
+        
+      </div>
+    )
+  }
