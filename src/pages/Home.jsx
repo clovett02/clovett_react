@@ -1,8 +1,6 @@
-import React, { Component } from "react";
 import headshot from '../images/headshot.png';
 
-export default Home(){
-    
+export default function Home(){
     return(
         <div>
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
