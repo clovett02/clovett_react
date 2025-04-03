@@ -10,11 +10,12 @@ h1, h2, h3, h4 {
 }
 
 body{
-    position: absolute;
+    position: relative;
     justify-items: center;
-    padding-left: 170px;
-    padding-right: 220px;
-    max-width: 1100px;
+    margin: auto;
+    max-width: 70%;
+    padding: 4px;
+    overflow: hidden;
 }
 
 a {
@@ -22,21 +23,21 @@ a {
 }
 
 .sidepanel {
-    height: auto; /* Specify a height */
-    width: 150px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    position: fixed;
+    height: auto;
+    width: 9%;
+    position: fixed;
+    /* z-index: 1; */
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 50px; /* Place content 60px from the top */
+    overflow-x: hidden;
+    padding-top: 10px;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
     border-style: double;
     border-color: #f8f533;
   }
   
-  /* The sidepanel links */
   .sidepanel a {
     padding: 8px 8px 8px 28px;
     text-decoration: none;
@@ -46,12 +47,10 @@ a {
     transition: 0.3s;
   }
   
-  /* When you mouse over the navigation links, change their color */
   .sidepanel a:hover {
     color: #f1f1f1;
   }
   
-  /* Position and style the close button (top right corner) */
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
@@ -60,7 +59,6 @@ a {
     margin-left: 60px;
   }
   
-  /* Style the button that is used to open the sidepanel */
   .openbtn {
     position: absolute;
     text-align: center;
@@ -79,13 +77,11 @@ a {
   }
 
   .headshot {
-    position: absolute;
+    position: fixed;
     right: 5px;
     padding-left: 5px;
     margin-left: 5px;
   }
-
-  
 
   .boldtext{
     font-weight: bolder;
