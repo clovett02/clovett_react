@@ -1,7 +1,20 @@
-.links{
-    text-align: center;
-  }
 
-/* .about-me{
-  max-width: 1000px;
-} */
+h1, h2, h3, h4 {
+    color: purple;
+    text-align: center;
+}
+
+.home {
+  position: relative;
+  max-width: 65%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.links{
+  text-align: center;
+}
+
+a {
+  color: gold;
+}

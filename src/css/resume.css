@@ -1,6 +1,7 @@
-.body, p, ul, li{
-    text-align: left;
-    padding-right: 220;
+
+.resume {
+    max-width: 80%;
+    margin: auto;
 }
 
 .company{

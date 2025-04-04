@@ -1,4 +1,4 @@
-import './App.css';
+import './css/app.css';
 import { BrowserRouter, Routes, Route } from 'react-router';
 // import Sidepanel from './components/Sidepanel';
 import Home from './pages/Home';

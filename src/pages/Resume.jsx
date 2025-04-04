@@ -3,7 +3,7 @@ import headshot from '../images/headshot.png';
 
 export default function Resume(){
     return(
-        <div>
+        <div className="resume">
             <div class="headshot">
                 <picture id="headshot_pic">
                     <img src={headshot} width="194" height="218" alt="headshot.png"/>

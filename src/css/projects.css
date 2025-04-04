@@ -1,26 +1,30 @@
 
-.projects{
+.projects {
     list-style: none;
-    max-width: 100%;
 }
 
 .project {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pics img {
-    max-height: 200px;
+.description {
+    max-width: 60%;
 }
 
-.project span {
-    border-style: solid;
-    border-color: yellow;
+.pics {
+    max-width: 20%;
+}
+
+.pics img {
+    max-height: 150px;
 }
 
 .skills {
+    width: 10%;
+}
+
+.skills li{
     list-style: circle;
-    width: 20%;
 }
