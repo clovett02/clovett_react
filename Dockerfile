@@ -11,7 +11,5 @@ RUN npm install -g serve
 
 RUN npm run build
 
-COPY . .
-
 CMD ["serve", "-s", "build", "-l", "3000", "--ssl-cert", "/etc/letsencrypt/live/clovett.me/fullchain.pem", \
 "--ssl-key", "/etc/letsencrypt/live/clovett.me/privkey.pem"]
