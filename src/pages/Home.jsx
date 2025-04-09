@@ -19,8 +19,10 @@ export default function Home(){
                         and learn new things.
                     </p>
                     <p>&emsp;If you want to learn more about my professional experience, please 
-                        click the link to my Resume page and also take a look at some of 
-                        the projects that I've done, and others that I'm currently working on.
+                        click the link to my <a href='/resume'>Resume</a> page and also take a look at some of 
+                        the <a href='/projects'>Projects</a> that I've done, and others that I'm currently working on.
+                        Note that do to a lot of my professional work being confidential, I've only listed personal
+                        projects on this page.
                     </p>
                 </div>                
                 <div class="links">
