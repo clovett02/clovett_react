@@ -3,5 +3,5 @@
     max-width: 90%;
     justify-self: center;
     margin: auto;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
