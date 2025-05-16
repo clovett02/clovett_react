@@ -19,8 +19,8 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - /etc/letsencrypt:/etc/letsencrypt
-      - ./access.log:/var/log/nginx/access.log;
-      - ./error.log:/var/log/nginx/error.log;
+      - ./access.log:/var/log/nginx/access.log:rw
+      - ./error.log:/var/log/nginx/error.log:rw
     depends_on:
       - clovett_react
     restart: unless-stopped
