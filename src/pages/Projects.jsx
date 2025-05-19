@@ -18,10 +18,10 @@ export default function Projects(props) {
             </span>
             <span className="description">
                 <h2>Job App Tracker</h2>
-                    <p>This is a simple web application that I use to track job applications. I build it with
-                        React, and it runs in a docker container on my homeserver. It creates, reads, and 
-                        updates job application information from an API, written in C#, that interacts with 
-                        a local MySQL docker instance, also on my home server.</p>
+                    <p>This is a simple web application that I use to track job applications. I built it with
+                        React, and it runs in a docker container on my homeserver. I use it to create, read, and 
+                        update job application information by interacting with an API, that I authored in C#. 
+                        The C# API interacts with a local instance of MySQL running on my server..</p>
                 </span>
             <span className="skills">
                 <h3>Skills/Topics Demonstrated</h3>
