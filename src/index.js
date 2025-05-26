@@ -8,10 +8,10 @@ import Sidepanel from './components/Sidepanel';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <body>
+    <div>
       <Sidepanel/>
       <App />
-    </body>
+    </div>
   </React.StrictMode>
 );
 
