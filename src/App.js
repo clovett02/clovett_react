@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 // import Sidepanel from './components/Sidepanel';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects.tsx';
 
 export default function App(){
     return (
