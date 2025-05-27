@@ -1,5 +1,6 @@
 import '../css/projects.css';
 import { Project, ProjectType } from '../components/Project.tsx'
+declare module '*.png';
 import jh1 from '../images/jobhunt1.png';
 import jh2 from '../images/jobhunt2.png';
 import gl1 from '../images/gitlab1.png';
@@ -25,7 +26,7 @@ const projs: ProjectType[] = [
                     docker images, python packages, and other applications that I work on. After the initial setup
                     and configuration of the associted .gitlab-ci.yml file, the whole build, test, and deploy
                     process for a project is quick and painlessly kicked off with a push to the main branch of that
-                    projects repository.`,
+                    project's repository.`,
         skills: ["Git", "Gitlab", "CI/CD"],
         pics: [gl1, gl2],
         alts: ["Gitlab 1", "Gitlab 2"]

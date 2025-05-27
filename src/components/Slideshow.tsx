@@ -29,8 +29,8 @@ export default function Slideshow(props:{pics:String[], alts:String[]}) {
 
     return(
         <span className="pics">
-            <a href={pics[picindex]}>
-                <img src={pics[picindex]} alt={alts[picindex]} />
+            <a href={`${pics[picindex]}`}>
+                <img src={`${pics[picindex]}`} alt={`${alts[picindex]}`} />
             </a>
         </span>
     );
