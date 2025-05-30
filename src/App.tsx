@@ -1,8 +1,7 @@
 import './css/app.css';
 import { BrowserRouter, Routes, Route } from 'react-router';
-// import Sidepanel from './components/Sidepanel';
-import Home from './pages/Home';
-import Resume from './pages/Resume';
+import Home from './pages/Home.tsx';
+import Resume from './pages/Resume.tsx';
 import Projects from './pages/Projects.tsx';
 
 export default function App(){

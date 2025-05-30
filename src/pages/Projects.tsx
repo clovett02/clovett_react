@@ -1,5 +1,5 @@
 import '../css/projects.css';
-import { Project, ProjectType } from '../components/Project.tsx'
+import { Project, type ProjectType } from '../components/Project.tsx'
 import johu1 from '../images/jobhunt1.png';
 import johu2 from '../images/jobhunt2.png';
 import gila1 from '../images/gitlab1.png';
