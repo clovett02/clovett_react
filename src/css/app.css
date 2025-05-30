@@ -1,7 +1,8 @@
+div.SidepanelContainer {
+    width: 10%;
+}
 
-.App {
-    max-width: 90%;
-    justify-self: center;
-    margin: auto;
-    /* overflow: scroll; */
+div.AppContainer {
+    width: 90%;
+    padding-left: 12%;
 }

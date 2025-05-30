@@ -26,7 +26,6 @@ export function Project(props:{key: string, project: ProjectType}) {
                         <li key={skills.indexOf(skill)}>{skill}</li>
                     )}
                 </ul>
-
             </span>
         </li>
     );

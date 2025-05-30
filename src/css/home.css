@@ -5,10 +5,7 @@ h1, h2, h3, h4 {
 }
 
 .home {
-  position: relative;
-  max-width: 65%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 250px;
 }
 
 .links{
@@ -18,3 +15,11 @@ h1, h2, h3, h4 {
 a {
   color: gold;
 }
+
+  .headshot picture {
+    position: absolute;
+    right: 5px;
+    padding-left: 5px;
+    margin-left: 5px;
+    z-index: -1;
+  }

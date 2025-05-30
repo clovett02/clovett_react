@@ -8,8 +8,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
-      <Sidepanel/>
-      <App />
+      <div className='SidepanelContainer'>
+        <Sidepanel/>
+      </div>
+      <div className='AppContainer'>
+        <App />
+      </div>
     </div>
   </React.StrictMode>
 );
