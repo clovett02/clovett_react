@@ -14,9 +14,9 @@ const projs: ProjectType[] = [
         id: "0",
         name: "Grocery List Web App",
         description: `This is the first app that I began working on with the goal of learning more about Angular. This is a web app that assists 
-                        me, my wife, and anyone else on our home network with adding and removing things from a grocery for the household that 
-                        we share. It pulls pricing and availability data from Walmart and Target using their respective APIs. It runs within a 
-                        docker container on our home server.`,
+                        me, my wife, and anyone else on our home network with adding and removing things from a grocery list that we share for 
+                        the household. It runs within a docker container on our home server. In the near future, I plan to add features so that it 
+                        pulls pricing and availability data from Walmart and Target using their respective APIs.`,
         skills: ["AngularJS", "Typescript", "Docker"],
         pics: [grli1],
         alts: [""]
@@ -27,7 +27,7 @@ const projs: ProjectType[] = [
         description: `Over time, keeping up with gamesaves can be a chore. To deal with that, I created a Python script for checking
                         and linking those dirctories, and a MySQL database for storing the Game Names and save locations. I then 
                         created this simple Angular web app that interacts with an API to create, read, update, and delete 
-                        (CRUD) those gamesaves within the database.`,
+                        (CRUD) those gamesaves within a loc MySQL database.`,
         skills: ["AngularJS", "Typescript", "Docker"],
         pics: [gasa1, gasa2, gasa3],
         alts: [""]
