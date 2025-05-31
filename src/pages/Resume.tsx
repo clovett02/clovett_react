@@ -1,10 +1,25 @@
+import { useState, useEffect } from 'react';
 import '../css/resume.css'
 import headshot from '../images/headshot.png';
 
 export default function Resume(){
+
+    const [pichidden, setpichidden] = useState(window.innerWidth < 900);
+
+    useEffect(() => {
+        const handleresize = () => {
+            setpichidden(window.innerWidth < 900);
+        }
+        window.addEventListener('resize', handleresize);
+        handleresize();
+        return () => {
+            window.removeEventListener('resize', handleresize);
+        };
+    }, []);
+
     return(
         <div className="resume">
-            <div className="headshot">
+            <div className="headshot" hidden={pichidden}>
                 <picture id="headshot_pic">
                     <img src={headshot} width="194" height="218" alt="headshot.png"/>
                 </picture>

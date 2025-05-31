@@ -1,12 +1,33 @@
+import { useState, useEffect } from 'react'; 
 import headshot from '../images/headshot.png';
 import '../css/home.css';
 
 export default function Home(){
+
+    const [pichidden, setpichidden] = useState(window.innerWidth < 900);
+
+    useEffect(() => {
+        const handleresize = () => {
+            setpichidden(window.innerWidth < 900);
+        }
+        window.addEventListener('resize', handleresize);
+        handleresize();
+        return () => {
+            window.removeEventListener('resize', handleresize);
+        };
+    }, []);
+
+    const styles = {
+        "home": {
+            "width": 800
+        }
+    }
+
     return(
         <div className='home'>
             <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-            <div className="headshot">
+            <div className="headshot" hidden={pichidden}>
                 <picture id="headshot_pic">
                     <img src={headshot} width="194" height="218" alt="headshot.png"/>
                 </picture>
@@ -28,7 +49,8 @@ export default function Home(){
                 <div className="links">
                     <h4>Github Repositories</h4>
                     <a href="https://github.com/clovett02?tab=repositories">
-                        https://github.com/clovett02?tab=repositories</a><p></p>
+                        https://github.com/clovett02?tab=repositories
+                    </a><br/>
 
                     <h4>LinkedIn Profile</h4>
                     <div className="badge-base LI-profile-badge" data-locale="en_US" 
@@ -36,7 +58,8 @@ export default function Home(){
                         data-vanity="chris-lovett-7b1207b6" data-version="v1">
                         <a className="badge-base__link LI-simple-link" 
                         href="https://www.linkedin.com/in/chris-lovett-7b1207b6?trk=profile-badge">
-                        https://www.linkedin.com/in/chris-lovett-7b1207b6/</a>
+                        https://www.linkedin.com/in/chris-lovett-7b1207b6/
+                        </a>
                     </div>
                 </div>
         </div>
