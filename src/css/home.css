@@ -18,6 +18,7 @@ a {
 
   .headshot picture {
     position: absolute;
+    top: 5px;
     right: 5px;
     padding-left: 5px;
     margin-left: 5px;

@@ -63,7 +63,7 @@ export default function Projects(props) {
     <div className='projcontainer'>
         <p className='projintro'>
             I find that the best way to learn is by doing, so I've developed a habit of coming up with useful ideas and creating
-            projects to solve those problems when I'm looking to learn about a new technology. Example are listed below.
+            projects to solve those problems when I'm looking to learn more about something. Examples are listed below.
         </p>
         <p className='projintro'>
             ***As a reminder, I'm unable to list any of my professional projects.
@@ -72,7 +72,7 @@ export default function Projects(props) {
         {projs.map((p) =>
             <Project key={p.id} project={p}/>
         )}
-    </ul>
+        </ul>
     </div>
     
   );
