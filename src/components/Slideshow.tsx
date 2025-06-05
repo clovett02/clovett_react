@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../css/Slideshow.css';
 
 
 export default function Slideshow(props:{pics:String[], alts:String[]}) {
@@ -12,7 +13,7 @@ export default function Slideshow(props:{pics:String[], alts:String[]}) {
 
         const interval = setInterval(() => {            
             setpicindex(nextImage());
-        }, 3000);
+        }, 6000);
         return () => {clearInterval(interval)};
     }, [])
 
