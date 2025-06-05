@@ -1,4 +1,4 @@
-
+import '../css/Sidepanel.css';
 
 function openNav(){
 
