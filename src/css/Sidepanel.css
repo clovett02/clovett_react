@@ -1,5 +1,5 @@
 div.sidepanel {
-    position: absolute;
+    position: fixed;
     height: auto;
     width: 10%;
     min-width: 100px;
