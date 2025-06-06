@@ -1,24 +1,69 @@
 @keyframes fadein {
 
     0% { 
-        opacity: 0%;
+        opacity: 20%;
         scale: 0.5;
-        transform: translateX(-80px)
+        transform: translateX(-10%);
+        z-index: 2;
+        
      }
-    50% { 
+    40% {
         opacity: 100%;
-        scale: 1;
+        transform: translateX(30%);
+        scale: 2;
+        z-index: 2;
     }
-    100% {
+    100% { 
         opacity: 100%;
-        transform: translateX(50px)
+        transform: translateX(40%);
+        scale: 2;
+        z-index: 2;
     }
     
 }
 
-span.pics a img {    
-    animation-name: fadein;
+@keyframes fadeout {
+    
+    0% { 
+        opacity: 100%;
+        transform: translateX(-10%);
+        scale: 1.8;
+     }
 
+    40%{
+        opacity: 0%;
+        scale: 0.5;
+        transform: translateX(80px);
+     }
+
+    100% { 
+        opacity: 0%;
+        scale: 0.5;
+        transform: translateX(80px);
+    }
+}
+
+span.pics span img {
+    display: flexbox;
+    max-width: 10%;
+    max-height: 80px;
+    
+}
+
+
+span.pics a.currentpic img { 
+    animation-name: fadein;
+    /* animation-direction: both; */
     animation-iteration-count: infinite;
-    animation-duration: 6s;
+    animation-duration: 8s;
+    animation-delay: 200ms;
+    z-index: 1;
+}
+
+span.pics a.prevpic img { 
+    animation-name: fadeout;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: 200ms;
+    z-index: -1;
 }
